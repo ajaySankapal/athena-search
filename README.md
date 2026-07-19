@@ -246,3 +246,9 @@ To get the best results, I built a hybrid scoring model that normalizes values b
 - **Incremental embedding generation**: Queue-based background processing (RabbitMQ/Kafka) for generating embeddings of new products.
 - **LLM-powered query understanding**: Use a lightweight LLM to parse complex user intents instead of regex.
 - **Click analytics & Personalization**: Factor in user behavior for re-ranking results.
+
+
+## UI Screenshots
+<img width="1440" height="856" alt="Screenshot 2026-07-20 at 12 19 20 AM" src="https://github.com/user-attachments/assets/6ba3bc56-1439-444b-bfe6-e00a3d21b20a" />
+<img width="1440" height="856" alt="Screenshot 2026-07-20 at 12 19 54 AM" src="https://github.com/user-attachments/assets/cbf317c3-1ec8-4bd9-91c0-4e8926a72e41" />
+
