@@ -1,0 +1,7 @@
+[
+  { "id": "1", "title": "MacBook Pro M2", "description": "High performance laptop for developers and creatives.", "category": "laptops", "price": 120000 },
+  { "id": "2", "title": "Logitech MX Master 3", "description": "Ergonomic wireless mouse for productivity.", "category": "accessories", "price": 8500 },
+  { "id": "3", "title": "Sony WH-1000XM5", "description": "Premium noise-canceling wireless headphones.", "category": "headphones", "price": 29990 },
+  { "id": "4", "title": "Dell 27 4K UHD Monitor", "description": "27-inch 4K monitor perfect for coding.", "category": "monitor", "price": 32000 },
+  { "id": "5", "title": "Keychron K2 Mechanical Keyboard", "description": "Compact wireless mechanical keyboard.", "category": "keyboard", "price": 8499 }
+]

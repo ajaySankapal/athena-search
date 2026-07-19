@@ -1,0 +1,27 @@
+### Health Check
+GET http://localhost:3000/api/health
+
+###
+
+### Search - Gaming keyboard under 5000
+GET http://localhost:3000/api/search?q=gaming%20keyboard%20under%205000
+
+###
+
+### Search - Gift cards for PlayStation
+GET http://localhost:3000/api/search?q=Gift%20cards%20for%20PlayStation
+
+###
+
+### Search - Budget mechanical keyboard
+GET http://localhost:3000/api/search?q=budget%20mechanical%20keyboard
+
+###
+
+### Search - Wireless gaming mouse
+GET http://localhost:3000/api/search?q=Wireless%20gaming%20mouse
+
+###
+
+### Search - Affordable monitor
+GET http://localhost:3000/api/search?q=Affordable%20monitor
