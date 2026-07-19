@@ -46,18 +46,29 @@ graph TD
 
 ## Setup
 
+This project is split into a backend search API (`athena`) and a frontend web interface (`athena-ui`).
+
+### 1. Backend (API)
 ```bash
+cd athena
+
+# Install dependencies
+npm install
+
+# Start development server (runs on port 3000)
+npm run dev
+```
+
+### 2. Frontend (UI)
+```bash
+cd athena-ui
+
 # Install dependencies
 npm install
 
 # Start development server
 npm run dev
-
-# Build for production
-npm run build
-npm start
 ```
-
 ## Environment Variables
 
 Create a `.env` file in the root directory:
@@ -208,20 +219,24 @@ To get the best results, I built a hybrid scoring model that normalizes values b
 
 ## Testing Instructions
 
-1. `npm run build` checks for TypeScript compilation errors.
-2. Start the server: `npm run dev`.
-3. Try standard queries using a browser, `curl`, or the provided `test.http` file (if using VS Code REST Client):
+### Testing the API
+1. Open a terminal and navigate to the backend directory: `cd athena`
+2. Run `npm run build` to check for TypeScript compilation errors.
+3. Start the server: `npm run dev`.
+4. Try standard queries using `curl` or the provided `athena/test.http` file (if using VS Code REST Client):
    ```bash
    curl "http://localhost:3000/api/search?q=Gift%20cards%20for%20PlayStation"
    curl "http://localhost:3000/api/search?q=Wireless%20gaming%20mouse"
    curl "http://localhost:3000/api/search?q=Affordable%20monitor"
    ```
-4. To test CSV loading, change `.env` to `DATA_SOURCE=csv`, restart the server, and it will work exactly the same.
-5. **Testing with the larger dataset**: The server starts with a small 5-item test dataset. I've included `sample-dataset.json` and `sample-dataset.csv` in the project root. You can upload either of these via the `/api/upload` endpoint (or the UI) to dynamically re-index and test the full dataset on the fly.
+5. To test CSV loading, change `.env` to `DATA_SOURCE=csv`, restart the server, and it will work exactly the same.
 
-## AI Prompts Used
-
-None. I wrote this completely from scratch based on the spec, without using AI generation tools.
+### Testing the Web Interface (UI)
+1. Ensure the backend is running (`cd athena && npm run dev`).
+2. Open a second terminal and navigate to the frontend directory: `cd athena-ui`.
+3. Start the Vite development server: `npm run dev`.
+4. Open your browser and navigate to `http://localhost:5173` to use the visual search interface.
+5. **Testing with the larger dataset**: The server starts with a small 5-item test dataset. I've included `sample-dataset.json` and `sample-dataset.csv` in the project root. You can upload either of these via the frontend UI's upload section to dynamically re-index and test the full catalog.
 
 ## Future Improvements
 

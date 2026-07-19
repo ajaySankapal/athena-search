@@ -87,7 +87,6 @@ function App() {
     <div className="container">
       <header className="header">
         <h1>AI Product Search</h1>
-        <p>A simple product search engine and indexing tool.</p>
       </header>
 
       <main>
